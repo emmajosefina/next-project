@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -10,7 +11,10 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Learn <a href="https://nextjs.org">Next.js!</a>
+          Read{" "}
+          <Link href="./posts/first-post">
+            <a>Next.js!</a>
+          </Link>
         </h1>
 
         <p className="description">
@@ -19,9 +23,11 @@ export default function Home() {
         <p className="description">
           {" "}
           or read the very first blog post{" "}
-          <a href="./posts/first-post">
-            <strong className="bold-link">here!</strong>
-          </a>
+          <Link href="./posts/first-post">
+            <a>
+              <strong className="bold-link">here!</strong>
+            </a>
+          </Link>
         </p>
 
         <div className="grid">
