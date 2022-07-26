@@ -12,8 +12,8 @@ export default function FirstPost() {
       </h2>
       <Image
         src="/profile.jpg"
-        height={144} //desired size with correct aspect ratio
-        width={144} // desired size with correct aspect ratio
+        height={400}
+        width={400}
         alt="Picture of Emma"
       />
     </>
