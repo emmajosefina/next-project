@@ -9,20 +9,18 @@ export default function FirstPost() {
       <Head>
         <title>First post</title>
       </Head>
-
+      <Image
+        src="/profile.jpg"
+        height={140}
+        width={140}
+        alt="Picture of Emma"
+      />
       <h1>First Post</h1>
       <h2>
         <Link href="/">
           <a>Back to home</a>
         </Link>
       </h2>
-
-      <Image
-        src="/profile.jpg"
-        height={300}
-        width={300}
-        alt="Picture of Emma"
-      />
     </Layout>
   )
 }
