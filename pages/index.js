@@ -2,6 +2,8 @@ import Head from "next/head"
 import Layout, { siteTitle } from "../components/layout"
 import utilStyles from "../styles/utils.module.css"
 
+import Header from "../components/Header"
+
 import { getSortedPostsData } from "../lib/posts"
 
 export async function getStaticProps() {
@@ -16,9 +18,11 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
+      <Header />
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
       <section className={utilStyles.headingMd}>
         <p>
           Hi, I'm Emma, a Frontend Developer with a background in communication
